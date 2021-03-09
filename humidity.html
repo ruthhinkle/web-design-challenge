@@ -14,7 +14,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Weather Analysis</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item dropdown">
@@ -49,19 +49,33 @@
 
     <div class='container'>
         <div class="row">
-          <div class="col-md-8">
+            <div class="col-sm-12 col-md-8 col-lg-8">
             <header>
-                <h1>Summary: Latitude vs. X</h1>
+                <h1>Latitude vs. Humidity</h1>
             </header>
             <section id="introduction">
-                <img  id="main_fig" src="Images/Fig1.png" alt="latitude" style="width:400px;height:250px;float:left">
-                <p> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the
-                    OpenWeatherMap API to assemble a dataset of over 500 cities.
-                </p>
-                 <p> After assembling the dataset, we used Matplotlib to plot various aspects of a city's weather versus that city's latitude. Aspects
-                    we looked at included: temperature, cloudiness, humidity, and wind speed. This site provides the source data and visualizations
-                    created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-                 </p>
+                <img  id="main_fig" src="Images/Fig2.png" alt="latitude vs humidity" style="float:left">
+                <p>Based on this graph, the correlation between promixity to the equator and percent of humidity does not appear to be significant. Many latitudes between -55 degrees and 65 degrees reached 100% humidity for example.</p>
             </section>
           </div>
+          <div class="col-md-4">
+            <header>
+                <h1>Visualizations</h1>
+            </header>
+            <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-6">
+                        <img src="Images/Fig1.png" alt="lat_vs_temp" style="width: 140px;height:140px;">                 
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-6">
+                        <img src="Images/Fig2.png" alt="lat_vs_humidity" style="width: 140px;height:140px;">
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-6">
+                        <img src="Images/Fig3.png" alt="lat_vs_cloudiness" style="width: 140px;height:140px;">
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-6">
+                        <img  src="Images/Fig4.png" alt="lat_vs_windiness" style="width: 140px;height:140px;">
+                </div>
+            </div>
+        </div>
+        </div>
         </body>
